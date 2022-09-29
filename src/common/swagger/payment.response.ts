@@ -1,0 +1,31 @@
+export const paymentResponse = {
+  deliveryAddress: {
+    firstname: 'Akiburr',
+    lastname: 'Rahman',
+    street: 'Billweise',
+    houseNumber: '21',
+    postcode: '21033',
+    city: 'Hamburg',
+    country: 'DE',
+    phone: '12324234234',
+    changed: '2022-09-29T07:45:59.000Z',
+    created: '2022-09-29T07:45:59.000Z',
+    id: '0198d8db-a611-4bff-afcf-908b79aba1dd',
+  },
+  items: [
+    {
+      name: 'Pizza Caprese',
+      size: 'LARGE',
+      changed: '2022-09-29T07:45:59.000Z',
+      created: '2022-09-29T07:45:59.000Z',
+      id: '83ac5614-c28f-4a81-b13e-66ea14b32015',
+      crust: 'CLASSIC_CRUST',
+      sauce: 'TOMATO_SAUCE',
+    },
+  ],
+  totalAmount: 14,
+  changed: '2022-09-29T07:45:59.000Z',
+  created: '2022-09-29T07:45:59.000Z',
+  id: '571bb8f3-41c5-4a03-9d85-bd23507f1b2f',
+  status: 'PAID',
+};

@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "a418fdb5-9291-4a61-b964-6db706ff348c",
+		"name": "Pizza-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4565173"
+	},
+	"item": [
+		{
+			"name": "Menu",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/pizza-api/menu",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\"name\": \"Pizza Caprese\", \"size\":\"LARGE\"}\n    ],\n    \"deliveryAddress\": {\n        \"firstname\": \"Akibur\",\n        \"lastname\": \"Akibur\",\n        \"street\": \"Billweise\",\n        \"houseNumber\": \"21\",\n        \"postcode\": \"21033\",\n        \"city\": \"Hamburg\",\n        \"country\": \"DE\",\n        \"phone\": \"12324234234\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/pizza-api/order",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\"name\": \"Pizza Caprese\", \"size\":\"LARGE\"}\n    ],\n    \"deliveryAddress\": {\n        \"firstname\": \"Akiburr\",\n        \"lastname\": \"Rahman\",\n        \"street\": \"Billweise\",\n        \"houseNumber\": \"21\",\n        \"postcode\": \"21033\",\n        \"city\": \"Hamburg\",\n        \"country\": \"DE\",\n        \"phone\": \"12324234234\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/pizza-api/order/cf70b385-17d1-4067-9375-2dfbbf81a09c",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"order",
+						"cf70b385-17d1-4067-9375-2dfbbf81a09c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/pizza-api/order/571bb8f3-41c5-4a03-9d85-bd23507f1b2f",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"order",
+						"571bb8f3-41c5-4a03-9d85-bd23507f1b2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Payment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cardNumber\": 1234567890123456,\n    \"cardHolder\": \"Akibur Rahman\",\n    \"cvv\": 1234\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/pizza-api/payment/efa24a67-dca7-43c1-8812-65d536ade490",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"payment",
+						"efa24a67-dca7-43c1-8812-65d536ade490"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/pizza-api/order/efa24a67-dca7-43c1-8812-65d536ade490",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"pizza-api",
+						"order",
+						"efa24a67-dca7-43c1-8812-65d536ade490"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
