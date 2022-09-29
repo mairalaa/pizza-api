@@ -47,6 +47,17 @@ $ npm run test:order.e2e
 
 Visit http://localhost/pizza-api/swagger for API documentation. 
 
+## Invoking endpoint
+
+ #### Swagger (Recommended)
+
+It is possible to test the service directly from the swagger UI interface. 
+
+ #### Postman Collection
+
+You can also import postman collectionset file from /postman into your tool.
+
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
