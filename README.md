@@ -53,7 +53,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Akibur Rahman](https://kamilmysliwiec.com)
+- Author - [Akibur Rahman](https://github.com/mairalaa)
 
 
 ## License
